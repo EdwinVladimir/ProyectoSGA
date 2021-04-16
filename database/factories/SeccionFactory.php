@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Seccion;
+use App\Models\seccions;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SeccionFactory extends Factory
@@ -12,7 +12,7 @@ class SeccionFactory extends Factory
      *
      * @var string
      */
-    protected $model = Seccion::class;
+    protected $model = seccions::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class SeccionFactory extends Factory
     public function definition()
     {
         return [
-            'cod_sec' => $this->faker->postcode,
-            'nom_sec' => $this->faker->buildingNumber
+            //
         ];
     }
 }

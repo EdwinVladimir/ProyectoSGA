@@ -8,6 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class tiposangre extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['nom_sangre','desc_sangre'];
 }

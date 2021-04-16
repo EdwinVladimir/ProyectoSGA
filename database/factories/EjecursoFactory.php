@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Ejecurso;
+use App\Models\ejecursos;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EjecursoFactory extends Factory
@@ -12,7 +12,7 @@ class EjecursoFactory extends Factory
      *
      * @var string
      */
-    protected $model = Ejecurso::class;
+    protected $model = ejecursos::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class EjecursoFactory extends Factory
     public function definition()
     {
         return [
-            'nom_ejecurso' => $this->faker->buildingNumber,
-            'desc_ejecurso' => $this->faker->colorName,  
+            //
         ];
     }
 }

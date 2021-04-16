@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Matricula;
+use App\Models\matriculas;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class MatriculaFactory extends Factory
@@ -12,7 +12,7 @@ class MatriculaFactory extends Factory
      *
      * @var string
      */
-    protected $model = Matricula::class;
+    protected $model = matriculas::class;
 
     /**
      * Define the model's default state.
@@ -22,11 +22,7 @@ class MatriculaFactory extends Factory
     public function definition()
     {
         return [
-            'dni_al' => $this->faker->unixTime($max = 'now'),
-            'dni_doc' => $this->faker->unixTime($max = 'now'),
-            'cod_cur' => $this->faker->postcode,
-            'cod_sec' => $this->faker->postcode,
-            'cod_mat' => $this->faker->postcode
+            //
         ];
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Evaluac;
+use App\Models\evaluacs;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EvaluacFactory extends Factory
@@ -12,7 +12,7 @@ class EvaluacFactory extends Factory
      *
      * @var string
      */
-    protected $model = Evaluac::class;
+    protected $model = evaluacs::class;
 
     /**
      * Define the model's default state.
@@ -22,11 +22,7 @@ class EvaluacFactory extends Factory
     public function definition()
     {
         return [
-            'dni_al' => $this->faker->unixTime($max = 'now'),
-            'tipo_eva' => $this->faker->suffix,
-            'nota_eva' => $this->faker->randomDigitNot(5),
-            'peso_eva' => $this->faker->randomDigitNot(5),
-            'nopond_eva' => $this->faker->randomDigitNot(5)
-            ];
+            //
+        ];
     }
 }

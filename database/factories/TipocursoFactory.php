@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Tipocurso;
+use App\Models\tipocursos;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TipocursoFactory extends Factory
@@ -12,7 +12,7 @@ class TipocursoFactory extends Factory
      *
      * @var string
      */
-    protected $model = Tipocurso::class;
+    protected $model = tipocursos::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class TipocursoFactory extends Factory
     public function definition()
     {
         return [
-            'nom_curso' => $this->faker->buildingNumber,
-            'desc_curso' => $this->faker->colorName
+            //
         ];
     }
 }

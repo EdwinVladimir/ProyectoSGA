@@ -7,8 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class ejecurso extends Model
 {
-    use HasFactory; 
-    
-    protected $fillable = [ 'nom_ejecurso','desc_ejecurso'];
-    
+    use HasFactory;
 }

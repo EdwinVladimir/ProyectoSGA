@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Aula;
+use App\Models\aulas;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class AulaFactory extends Factory
@@ -12,7 +12,7 @@ class AulaFactory extends Factory
      *
      * @var string
      */
-    protected $model = Aula::class;
+    protected $model = aulas::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,9 @@ class AulaFactory extends Factory
     public function definition()
     {
         return [
-            'cod_aul' => $this->faker->postcode,
-            'num_aul' => $this->faker->buildingNumber 
+            //
+            'cod_aul' => $this->faker->ean8,
+            'num_aul' => $this->faker->name
         ];
     }
 }

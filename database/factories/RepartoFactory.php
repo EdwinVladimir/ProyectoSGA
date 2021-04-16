@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Reparto;
+use App\Models\repartos;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RepartoFactory extends Factory
@@ -12,7 +12,7 @@ class RepartoFactory extends Factory
      *
      * @var string
      */
-    protected $model = Reparto::class;
+    protected $model = repartos::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class RepartoFactory extends Factory
     public function definition()
     {
         return [
-            'nom_reparto' => $this->faker->postcode,
-            'desc_reparto' => $this->faker->buildingNumber
+            //
         ];
     }
 }

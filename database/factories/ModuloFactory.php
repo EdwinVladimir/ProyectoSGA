@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Modulo;
+use App\Models\modulos;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ModuloFactory extends Factory
@@ -12,7 +12,7 @@ class ModuloFactory extends Factory
      *
      * @var string
      */
-    protected $model = Modulo::class;
+    protected $model = modulos::class;
 
     /**
      * Define the model's default state.
@@ -22,12 +22,7 @@ class ModuloFactory extends Factory
     public function definition()
     {
         return [
-            'cod_mod' => $this->faker->postcode,
-            'nom_mod' => $this->faker->buildingNumber,
-            'finic_mat' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
-            'ffin_mat' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
-            'numat_mod' => $this->faker->randomDigitNot(5),  
-            'cod_mat' => $this->faker->postcode
+            //
         ];
     }
 }

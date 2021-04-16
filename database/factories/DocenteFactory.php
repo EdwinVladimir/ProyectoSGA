@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Docente;
+use App\Models\docentes;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DocenteFactory extends Factory
@@ -12,7 +12,7 @@ class DocenteFactory extends Factory
      *
      * @var string
      */
-    protected $model = Docente::class;
+    protected $model = docentes::class;
 
     /**
      * Define the model's default state.
@@ -22,12 +22,7 @@ class DocenteFactory extends Factory
     public function definition()
     {
         return [
-            'dni_doc' => $this->faker->unixTime($max = 'now'), 
-            'nom_doc' => $this->faker->firstNameMale,
-            'ape_doc' => $this->faker-> lastName,
-            'prom_doc' => $this->faker->titleMale,
-            'esp_doc' => $this->faker->suffix,
-            'lnac_doc' => $this->faker->date($format = 'Y-m-d', $max = 'now')
+            //
         ];
     }
 }

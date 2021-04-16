@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Especialidad;
+use App\Models\especialidads;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EspecialidadFactory extends Factory
@@ -12,7 +12,7 @@ class EspecialidadFactory extends Factory
      *
      * @var string
      */
-    protected $model = Especialidad::class;
+    protected $model = especialidads::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class EspecialidadFactory extends Factory
     public function definition()
     {
         return [
-            'nom_especialidad' => $this->faker->buildingNumber,
-            'desc_especialidad' => $this->faker->jobTitle
+            //
         ];
     }
 }

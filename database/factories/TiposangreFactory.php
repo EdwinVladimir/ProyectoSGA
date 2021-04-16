@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Tiposangre;
+use App\Models\tiposangres;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TiposangreFactory extends Factory
@@ -12,7 +12,7 @@ class TiposangreFactory extends Factory
      *
      * @var string
      */
-    protected $model = Tiposangre::class;
+    protected $model = tiposangres::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class TiposangreFactory extends Factory
     public function definition()
     {
         return [
-            'nom_sangre' => $this->faker->buildingNumber,
-            'desc_sangre' => $this->faker->colorName
+            //
         ];
     }
 }

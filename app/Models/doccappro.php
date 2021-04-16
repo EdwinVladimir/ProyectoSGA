@@ -8,6 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class doccappro extends Model
 {
     use HasFactory;
-    
-    protected $fillable =  [ 'dni_doc','crea_doccp','lug_doccp'];  
 }
