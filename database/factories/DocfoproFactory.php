@@ -24,7 +24,7 @@ class DocfoproFactory extends Factory
         return [
             'dni_doc' => $this->faker->unixTime($max = 'now'),
             'gra_docfp' => $this->faker->suffix,
-            'instt_adocp' => $this->faker->company,
+            'instt_docp' => $this->faker->company,
             'cobt_docfp' => $this->faker->state
         ];
     }

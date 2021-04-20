@@ -18,9 +18,6 @@ class CreateDocentesTable extends Migration
             $table->integer("dni_doc");
             $table->string("nom_doc", 255);
             $table->string("ape_doc", 255);
-            $table->string("prom_doc", 255);
-            $table->string("esp_doc", 255);
-            $table->date("lnac_doc");
             $table->timestamps();
         });
     }

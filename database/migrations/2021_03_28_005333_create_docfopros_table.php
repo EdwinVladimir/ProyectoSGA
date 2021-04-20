@@ -17,7 +17,7 @@ class CreateDocfoprosTable extends Migration
             $table->id();
             $table->integer("dni_doc");
             $table->string("gra_docfp");
-            $table->string("instt_adocp");
+            $table->string("instt_docp");
             $table->string("cobt_docfp");
             $table->timestamps();
         });

@@ -8,18 +8,7 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-// Importación del Vuetify
 import vuetify from './vuetify';
-
-// Importación de VueRouter
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
-
-// Importación de Componente Principal
-import App from './components/App.vue'
-
-import Alumnos from './components/Alumnos/Alumnos.vue'
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -31,27 +20,11 @@ import Alumnos from './components/Alumnos/Alumnos.vue'
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+Vue.component('Reparto-component', require('./components/Reparto/Reparto.vue').default);
 
 
-// Vue.component('alumnos', require('./components/Alumnos.vue').default);
-
-const router = new VueRouter({
-    mode: 'history',
-    routes: [
-      {
-        path: '/Alumnos',
-        component: Alumnos,
-        name: 'alumnos'
-      },
-
-//      {
-//        path: '/comments/create',
-//        component: CommentsCreate,
-//        name: 'comments.create',
-//      },
-    ]
-  })
-// Vue.component('pagination', require('laravel-vue-pagination'));
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -60,8 +33,4 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#app',
-    components: { App },
-    router,
-    vuetify
-
 });

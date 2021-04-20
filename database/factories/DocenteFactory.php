@@ -25,9 +25,6 @@ class DocenteFactory extends Factory
             'dni_doc' => $this->faker->unixTime($max = 'now'), 
             'nom_doc' => $this->faker->firstNameMale,
             'ape_doc' => $this->faker-> lastName,
-            'prom_doc' => $this->faker->titleMale,
-            'esp_doc' => $this->faker->suffix,
-            'lnac_doc' => $this->faker->date($format = 'Y-m-d', $max = 'now')
         ];
     }
 }
