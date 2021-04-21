@@ -47,7 +47,13 @@
                 <input v-model="horario.seccion" type="text" class="form-control" id="seccion" placeholder="Sección del Estudiante">
               </div>
             </div>
-
+            
+            <div class="my-4">
+                <label for="modulo">Modulo</label>
+                <input v-model="horario.modulo" type="text" class="form-control" id="modulo" placeholder="Modulo del Estudiante">
+              </div>
+            </div>
+            
             <div class="my-4">
                 <label for="materia">Materia</label>
                 <input v-model="horario.materia" type="text" class="form-control" id="materia" placeholder="Materia del Estudiante">
@@ -96,6 +102,7 @@
           <th scope="col">Curso</th>
           <th scope="col">Docente</th>
           <th scope="col">Sección</th>
+          <th scope="col">Modulo</th>          
           <th scope="col">Materia</th>
           <th scope="col">Día</th>
           <th scope="col">Hora de Inicio</th>
@@ -111,6 +118,7 @@
           <td>{{ hor.curso }}</td>
           <td>{{ hor.docente }}</td>
           <td>{{ hor.seccion }}</td>
+          <td>{{ hor.modulo }}</td>
           <td>{{ hor.materia }}</td>
           <td>{{ hor.dia }}</td>
           <td>{{ hor.hinicio }}</td>
@@ -139,6 +147,7 @@ export default {
         curso: 'yuu',
         docente:'yy',
         seccion:'yuu',
+        modulo: 'yuu',
         materia: 'yuu',
         dia:'yy',
         hinicio:'yuu',
@@ -183,6 +192,7 @@ export default {
         this.horario.docente=data.docente;
         this.horario.seccion=data.seccion;
         this.horario.materia=data.materia;
+        this.horario.modulo=data.modulo;
         this.horario.dia=data.dia;
         this.horario.hinicio=data.hinicio;
         this.horario.hfinal=data.hfinal;
@@ -192,6 +202,7 @@ export default {
         this.horario.dni='';
         this.horario.periodo='';
         this.horario.curso='';
+        this.horario.modulo='';
         this.horario.docente='';
         this.horario.seccion='';
         this.horario.materia='';

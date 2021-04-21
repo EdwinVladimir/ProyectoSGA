@@ -18,6 +18,7 @@ class CreateMatriculasTable extends Migration
             $table->integer("dni_al");
             $table->integer("dni_doc");
             $table->string("cod_cur");
+            $table->string("cod_mod");
             $table->string("cod_mat");
             $table->string("cod_sec");
             $table->timestamps();

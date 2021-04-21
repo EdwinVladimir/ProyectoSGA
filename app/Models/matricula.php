@@ -9,6 +9,6 @@ class matricula extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['dni_al','dni_doc','cod_cur','cod_mat','cod_sec'];
+    protected $fillable = ['dni_al','dni_doc','cod_cur','cod_mod','cod_mat','cod_sec'];
 
 }

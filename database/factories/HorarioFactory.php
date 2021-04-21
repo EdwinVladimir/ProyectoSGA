@@ -27,6 +27,7 @@ class HorarioFactory extends Factory
             'cod_per' => $this->faker->postcode,
             'cod_aul' => $this->faker->postcode,
             'cod_cur' => $this->faker->postcode,
+            'cod_mod' => $this->faker->postcode,
             'cod_sec' => $this->faker->postcode,
             'cod_mat' => $this->faker->postcode,
             'dia_hor' => $this->faker->date($format = 'Y-m-d', $max = 'now'),

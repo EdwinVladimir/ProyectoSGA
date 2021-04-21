@@ -19,6 +19,7 @@ class CreateGestionsTable extends Migration
             $table->integer("dni_doc"); 
             $table->string("cod_per");
             $table->string("cod_cur");
+            $table->string("cod_mod");
             $table->string("cod_sec");
             $table->string("cod_mat");
             $table->timestamps();

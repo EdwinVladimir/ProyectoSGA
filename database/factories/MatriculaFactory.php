@@ -25,6 +25,7 @@ class MatriculaFactory extends Factory
             'dni_al' => $this->faker->unixTime($max = 'now'),
             'dni_doc' => $this->faker->unixTime($max = 'now'),
             'cod_cur' => $this->faker->postcode,
+            'cod_mod' => $this->faker->postcode,
             'cod_sec' => $this->faker->postcode,
             'cod_mat' => $this->faker->postcode
         ];

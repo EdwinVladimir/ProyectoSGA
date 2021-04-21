@@ -26,6 +26,7 @@ class GestionFactory extends Factory
             'dni_doc' => $this->faker->unixTime($max = 'now'),
             'cod_per' => $this->faker->postcode,
             'cod_cur' => $this->faker->postcode,
+            'cod_mod' => $this->faker->postcode,
             'cod_sec' => $this->faker->postcode,
             'cod_mat' => $this->faker->postcode
         ];
