@@ -8,6 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class modalidadcurso extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['nom_moda','desc_moda'];
 }

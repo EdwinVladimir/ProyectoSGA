@@ -8,6 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class docexdoc extends Model
 {
     use HasFactory;
-    
-    protected $fillable =  [ 'dni_doc','carg_docep','cur_docep']; 
 }

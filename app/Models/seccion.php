@@ -8,7 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class seccion extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['cod_sec','nom_sec'];
-
 }

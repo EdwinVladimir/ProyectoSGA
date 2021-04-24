@@ -8,7 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class periodo extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['ano_per','peri_per'];
-
 }

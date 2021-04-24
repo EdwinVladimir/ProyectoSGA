@@ -111,7 +111,6 @@ export default {
 					this.alumno = response.data;
 				});
 		}
-    
 	}
 }
 </script>

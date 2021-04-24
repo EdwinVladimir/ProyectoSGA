@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Actividadeva;
+use App\Models\actividadevas;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ActividadevaFactory extends Factory
@@ -12,7 +12,7 @@ class ActividadevaFactory extends Factory
      *
      * @var string
      */
-    protected $model = Actividadeva::class;
+    protected $model = actividadevas::class;
 
     /**
      * Define the model's default state.
@@ -22,11 +22,7 @@ class ActividadevaFactory extends Factory
     public function definition()
     {
         return [
-            'dni_al' => $this->faker->unixTime($max = 'now'),
-            'tipo_eva' => $this->faker->lastName,
-            'nota_eva' => $this->faker->randomDigitNot(8),
-            'peso_eva' => $this->faker->randomDigitNot(10),
-            'nopond_eva' => $this->faker->randomDigitNot(15)
+            //
         ];
     }
 }

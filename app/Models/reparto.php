@@ -8,7 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class reparto extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['nom_reparto','desc_reparto'];
-
 }

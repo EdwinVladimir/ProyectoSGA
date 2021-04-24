@@ -15,8 +15,8 @@ class CreateModalidadcursosTable extends Migration
     {
         Schema::create('modalidadcursos', function (Blueprint $table) {
             $table->id();
-            $table->string("nom_moda");
-            $table->string("desc_moda"); 
+            $table->string("nom_ejecurso");
+            $table->string("desc_ejecurso"); 
             $table->timestamps();
         });
     }

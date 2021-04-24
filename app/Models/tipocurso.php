@@ -8,7 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class tipocurso extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['nom_curso','desc_curso'];
-
 }

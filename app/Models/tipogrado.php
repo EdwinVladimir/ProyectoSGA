@@ -8,7 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class tipogrado extends Model
 {
     use HasFactory;
-    
-    protected $fillable = ['nom_grado','desc_grado'];
-    
 }

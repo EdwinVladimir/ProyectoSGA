@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Tipogrado;
+use App\Models\tipogrados;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TipogradoFactory extends Factory
@@ -12,7 +12,7 @@ class TipogradoFactory extends Factory
      *
      * @var string
      */
-    protected $model = Tipogrado::class;
+    protected $model = tipogrados::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class TipogradoFactory extends Factory
     public function definition()
     {
         return [
-            'nom_grado' => $this->faker->buildingNumber,
-            'desc_grado' => $this->faker->colorName
+            //
         ];
     }
 }
