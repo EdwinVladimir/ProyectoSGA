@@ -23,6 +23,7 @@ class GestionFactory extends Factory
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             //
 =======
             'dni_al' => $this->faker->unixTime($max = 'now'),
@@ -33,6 +34,9 @@ class GestionFactory extends Factory
             'cod_sec' => $this->faker->postcode,
             'cod_mat' => $this->faker->postcode
 >>>>>>> c7e86339590077c71e0d19195efc93d3ca56d5f7
+=======
+            //
+>>>>>>> 590e5fb766f1723d82da4eb56048f568b06ff563
         ];
     }
 }

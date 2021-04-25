@@ -23,6 +23,7 @@ class HorarioFactory extends Factory
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             //
 =======
             'dni_al' => $this->faker->unixTime($max = 'now'),
@@ -37,6 +38,9 @@ class HorarioFactory extends Factory
             'inic_hor' => $this->faker->time($format = 'H:i:s', $max = 'now'),
             'ter_hor' => $this->faker->time($format = 'H:i:s', $max = 'now')
 >>>>>>> c7e86339590077c71e0d19195efc93d3ca56d5f7
+=======
+            //
+>>>>>>> 590e5fb766f1723d82da4eb56048f568b06ff563
         ];
     }
 }
