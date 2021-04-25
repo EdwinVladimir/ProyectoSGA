@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class matricula extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
+=======
+    
+    protected $fillable = ['dni_al','dni_doc','cod_cur','cod_mod','cod_mat','cod_sec'];
+
+>>>>>>> c7e86339590077c71e0d19195efc93d3ca56d5f7
 }

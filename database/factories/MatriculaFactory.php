@@ -22,7 +22,16 @@ class MatriculaFactory extends Factory
     public function definition()
     {
         return [
+<<<<<<< HEAD
             //
+=======
+            'dni_al' => $this->faker->unixTime($max = 'now'),
+            'dni_doc' => $this->faker->unixTime($max = 'now'),
+            'cod_cur' => $this->faker->postcode,
+            'cod_mod' => $this->faker->postcode,
+            'cod_sec' => $this->faker->postcode,
+            'cod_mat' => $this->faker->postcode
+>>>>>>> c7e86339590077c71e0d19195efc93d3ca56d5f7
         ];
     }
 }
